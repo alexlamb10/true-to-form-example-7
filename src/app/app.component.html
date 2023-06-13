@@ -1,1 +1,11 @@
 <h1 class="text-xl text-bold mb-4">True to Form: A Guide to Reactive Forms</h1>
+
+<form [formGroup]="form">
+  <app-custom-checkbox formControlName="subscribe"></app-custom-checkbox>
+</form>
+
+<pre>
+  <code>
+    {{formUpdates$ | async | json}}
+  </code>
+</pre>
